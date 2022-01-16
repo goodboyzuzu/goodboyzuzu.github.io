@@ -1,0 +1,1 @@
+gsap.from('.navigation', {duration: 1,y:'-100%'})

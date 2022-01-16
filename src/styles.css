@@ -1,3 +1,52 @@
+.bg-intro {
+  background-image: url("./media/Titlecard_Background.png");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 120vh;
+}
+
+.bg-nav {
+  background-image: url("./media/navbar.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  min-height: 9vh;
+  max-width: 80%
+}
+
+.nav {
+  font-family: "PT serif",'Courier New', Courier, monospace
+}
+
+/* .container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
