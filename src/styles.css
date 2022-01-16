@@ -17,6 +17,10 @@
   max-width: 80%
 }
 
+.welcome-bg {
+  background-image: url("./media/Untitled\ 1.png");
+}
+
 .nav {
   font-family: "PT serif",'Courier New', Courier, monospace
 }
