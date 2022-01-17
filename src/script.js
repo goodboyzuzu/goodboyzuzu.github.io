@@ -14,13 +14,8 @@ timeline
   .to(".bigfrog", 10, { y: -300 })
   .to(".introFrog", 10, { y: -200 }, "-=10")
   .fromTo(".introBg", { y: -50 }, { y: 0, duration: 10 }, "-=10")
-  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
-  .to(".content", 10, { top: "-40" }, "-=10")
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 })
-  .fromTo(".introFrog", { opacity: 1 }, { opacity: 0, duration: 3 },"-=10")
-  .fromTo(".bigfrog", { opacity: 1 }, { opacity: 0, duration: 3 },"-=10")
-  .fromTo(".navigation", { opacity: 1 }, { opacity: 0, duration: 3 },"-=10");
-
+  .to(".content", 8, { top: "0%" }, "-=10")
+  
 let scene = new ScrollMagic.Scene({
   triggerElement: "section",
   duration: "300%",
