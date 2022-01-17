@@ -7,20 +7,20 @@ gsap.from(".bigfrog", { duration: 0.5, y: "100%" });
 
 // timeline.to(".bigfrog",3,{y:-600}).to(".introFrog",{y:-400},"-=3").fromto(".introBg",{ y: -50 }, { y: 0, duration: 10 }, "-=10");
 
-let controller = new ScrollMagic.Controller();
-let timeline = new TimelineMax();
+let controller1 = new ScrollMagic.Controller();
+let timeline1 = new TimelineMax();
 
-timeline
+timeline1
   .to(".bigfrog", 10, { y: -300 })
   .to(".introFrog", 10, { y: -200 }, "-=10")
   .fromTo(".introBg", { y: -50 }, { y: 0, duration: 10 }, "-=10")
   .to(".content", 8, { top: "0%" }, "-=10")
   
-let scene = new ScrollMagic.Scene({
+let scene1 = new ScrollMagic.Scene({
   triggerElement: "section",
   duration: "300%",
   triggerHook: 0,
 })
-  .setTween(timeline)
+  .setTween(timeline1)
   .setPin("section")
-  .addTo(controller);
+  .addTo(controller1);
