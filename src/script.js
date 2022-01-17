@@ -26,7 +26,7 @@ let scene = new ScrollMagic.Scene({
   triggerHook: 0,
 })
   .setTween(timeline1)
-  .setPin("section")
+  .setPin("body")
   .addTo(controller1);
 
 
