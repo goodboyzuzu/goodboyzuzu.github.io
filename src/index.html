@@ -41,27 +41,21 @@
   <!-- Introduction -->
 
   <div class="h-screen relative w-screen intro hero">
+    
     <div class="flex justify-center items-center gap-20 absolute w-screen navigation px-5">
-      <!--
-      <div class="z-20">
-        <img
-          src="./media/Titlecard_foreground.png"
-          class="max-w-[10rem] relative"
-        />
-      </div>
-      -->
+      
       <ul
-        class="flex flex-row w-[50rem] z-20 justify-between font-extrabold text-white nav"
+        class="flex flex-row w-[50rem] z-20 justify-between font-extrabold text-white nav z-30"
       >
         <li class="nav-button-text">HOME</li>
         <li class="nav-button-text">WHITEPAPER</li>
         <li class="nav-button-text">TOKENOMICS</li>
-        <li class="nav-button-text">CATALOGUE</li>
+        <li class="nav-button-text"><a href="#catalogue">CATALOGUE</a></li>
       </ul>
 
       <img src="./media/Navbar.png" class="mx-auto w-[70rem] absolute" />
     </div>
-
+    
     <img
       src="./media/BlueFrog.png"
       class="absolute w-[25%] bluefrog parallax"
@@ -76,7 +70,7 @@
 
     <img
       src="./media/RocketFrog.png"
-      class="absolute w-[33%] rocketfrog parallax"
+      class="absolute w-[28%] rocketfrog parallax"
       data-depth="0.70"
     />
     
@@ -102,13 +96,6 @@
   <!--  Scroll -->
 
   <div class="h-screen content w-screen absolute mountain parallax z-10" data-depth="0.85">
-    <!-- <div class="mountain"></div> -->
-    <!-- <img
-      src="./media/mountain-bg.png"
-      class="min-h-[120vh] parallax"
-      data-depth="0.85"
-    /> -->
-
 
     <div class="absolute flex items-center justify-center 
         top-[20%] left-2/4 -translate-x-2/4 w-[90%] h-3/5">
@@ -137,53 +124,6 @@
   <!-- Gameplay footage -->
   <div class="h-[10vh] bg-[#006154] -z-20"></div>
   <div class="relative bg-[#006154] w-screen">
-    <!-- <div class="h-[150vh] pt-10 website-section">
-        <div
-          class="text-5xl font-bold font-serif flex justify-center align-text-top mb-10 text-white mb-8"
-        >
-          GAMEPLAY
-        </div>
-        <div class="h-28"></div>
-        <div class="flex gap-10 justify-around flex-wrap">
-          
-          <div
-            class="w-[30rem] h-[20rem] text-center bg-white px-7 pt-7 pi-28 shadow-lg -rotate-12"
-          >
-            <video class="video-frame w-fit" autoplay loop muted>
-              <source src="./media/breeding-footage.mp4" type="video/mp4" />
-            </video>
-            <div class="polaroid-text">Breed</div>
-          </div>
-
-          <div class="w-[30rem] h-[10rem]"></div>
-          <div class="w-[30rem] h-[10rem]"></div>
-
-          <div
-            class="w-[30rem] h-[20rem] text-center bg-white px-7 pt-7 pb-28 shadow-lg rotate-12"
-          >
-            <video class="video-frame w-fit" autoplay loop muted>
-              <source src="./media/combat-footage.mp4" type="video/mp4" />
-            </video>
-            <div class="polaroid-text">Combat</div>
-          </div>
-
-          <div
-            class="w-[30rem] h-[20rem] text-center bg-white px-7 pt-7 pb-28 shadow-lg -rotate-12"
-          >
-            <video class="video-frame w-fit" autoplay loop muted>
-              <source src="./media/general-footage.mp4" type="video/mp4" />
-            </video>
-            <div class="polaroid-text">Explore</div>
-          </div>
-          <div class="w-[30rem] h-[20rem]"></div>
-        </div>
-        
-          <img src="./media/webbed.png"
-        class=" rotate-12 js-content-opacity"/>
-        <
-        
-        
-      </div> -->
   </div>
 
   <div class="green-black-gradient basic-grid pt-20 pb-20">
@@ -218,7 +158,7 @@
 
   <!--Catalogue-->
 
-  <div class="relative">
+  <div id="catalogue" class="relative">
     <img src="./media/mushroom-bg.png" class="absolute h-[100vh] w-screen" />
 
     <div class="signboard">
@@ -229,12 +169,12 @@
     <div class="h-[100vh] flex items-center justify-between">
       <div class="overflow-hidden">
         <button
-          class="previous-button z-10 absolute opacity-40 left-0 top-2/4"
+          class="previous-button z-10 absolute left-0 top-2/4"
         >
           <ion-icon name="caret-back-outline" class="text-8xl -translate-y-2/4 -translate-x-1/4"></ion-icon>
         </button>
         <div
-          class="relative bg-amber-200 w-40 h-40 rounded-full opacity-40 -left-[60%] top-[150%]"
+          class="relative bg-amber-200 w-40 h-40 rounded-full -left-[60%] top-[150%]"
         ></div>
       </div>
 
@@ -288,11 +228,11 @@
         </div>
       </div>
       <div class="overflow-hidden">
-        <button class="next-button z-10 absolute opacity-40 right-0 top-2/4">
+        <button class="next-button z-10 absolute right-0 top-2/4">
           <ion-icon name="caret-forward-outline" class="text-8xl -translate-y-2/4 translate-x-1/4"></ion-icon>
         </button>
         <div
-          class="relative bg-amber-200 w-40 h-40 rounded-full opacity-40 -right-[60%] overflow-hidden"
+          class="relative bg-amber-200 w-40 h-40 rounded-full -right-[60%] overflow-hidden"
         ></div>
       </div>
     </div>

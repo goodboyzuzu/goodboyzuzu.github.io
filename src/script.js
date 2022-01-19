@@ -4,8 +4,8 @@ gsap.from(".navigation", { duration: 1, y: "-100%" });
 
 gsap.fromTo(
     ".redfrog", 
-    { top: "-80%", right: "-80%", y: "-50%", x: "50%" },
-    { top: "20%", right: "20%", duration: 1 }
+    { top: "-75%", right: "-80%", y: "-50%", x: "50%" },
+    { top: "25%", right: "20%", duration: 1 }
 );
 
 gsap.fromTo(
@@ -16,8 +16,8 @@ gsap.fromTo(
 
 gsap.fromTo(
     ".rocketfrog", 
-    { top: "-80%", left: "-80%", y: "-50%", x:"-50%" },
-    { top: "20%", left: "20%", duration: 1 }
+    { top: "-75%", left: "-80%", y: "-50%", x:"-50%" },
+    { top: "25%", left: "20%", duration: 1 }
 );
 
 gsap.fromTo(
