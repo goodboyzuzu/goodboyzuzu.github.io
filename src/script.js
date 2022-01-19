@@ -1,12 +1,42 @@
 // Animation for introduction
 
 gsap.from(".navigation", { duration: 1, y: "-100%" });
-gsap.from(".redfrog", { duration: 1, y: "-100%", x: "100%" });
-gsap.from(".smokefrog", { duration: 1, y: "100%", x: "100%" });
-gsap.from(".rocketfrog", { duration: 1, y: "-100%", x: "-100%" });
-gsap.from(".bluefrog", { duration: 1, y: "100%", x: "-100%" });
-gsap.from(".bigfrog", { duration: 0.5, y: "100%" });
 
+gsap.fromTo(
+    ".redfrog", 
+    { top: "-80%", right: "-80%", y: "-50%", x: "50%" },
+    { top: "20%", right: "20%", duration: 1 }
+);
+
+gsap.fromTo(
+    ".smokefrog", 
+    { bottom: "-80%", right: "-80%", y: "50%", x: "50%" },
+    { bottom: "20%", right: "20%", duration: 1}
+);
+
+gsap.fromTo(
+    ".rocketfrog", 
+    { top: "-80%", left: "-80%", y: "-50%", x:"-50%" },
+    { top: "20%", left: "20%", duration: 1 }
+);
+
+gsap.fromTo(
+    ".bluefrog", 
+    { bottom: "-80%", left: "-80%", y: "50%", x: "-50%" },
+    { bottom: "20%", left: "20%", duration: 1 }
+);
+
+gsap.fromTo(
+    ".bigfrog", 
+    {xPercent:-50, yPercent: 20, left:"50%", top:"50%"}, 
+    {xPercent:-50, yPercent:-50, duration: 0.5}
+);
+
+gsap.fromTo(
+  ".learnmore", 
+  {xPercent:-50, yPercent: 20, left:"50%", top:"85%"}, 
+  {xPercent:-50, yPercent:-50, duration: 0.5}
+);
 
 // Scroll Animation
 
@@ -37,6 +67,7 @@ const tl = gsap.timeline({
 		scrub: true
 	}
 });
+
 
 gsap.utils.toArray(".parallax").forEach(layer => {
 	const depth = layer.dataset.depth;
