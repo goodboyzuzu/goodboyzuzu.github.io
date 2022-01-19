@@ -33,9 +33,9 @@
 }
 
 .layer {
-  height: 100vh;
+  background-size: cover;
   background-image: url(./media/Titlecard_Background.png);
-  min-height: 110vh;
+  background-repeat:no-repeat;
 }
 
 .grid-parent {
