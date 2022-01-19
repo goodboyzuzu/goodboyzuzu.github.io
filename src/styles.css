@@ -1,37 +1,37 @@
-.bigbutton {
-  padding: 15px;
-  background-color: rgb(86, 129, 148);
-  border-radius: 25px;
-  color: white;
-  font-family: 'Londrina Solid';
-  font-size: 30px;
-  text-shadow: 0px 5px rgb(66, 100, 114);
-  box-shadow: 0px 5px 5px black;
+.intro-page {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
 }
 
-.bigbutton:hover {
-  font-size: 40px
-}
-
-.mountain {
-  background-image: url(./media/mountain-bg.png);
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; 
-}
-
-.scroll-text {
-  height: 85%;
-  width: 70%;
-  text-align: justify;
-
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem /* 80px */;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  font-family: 'Londrina Solid';
-  font-weight: light;
+  width: 100vw;
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem;
 }
+
+.navbar {
+  position: absolute;
+  width: 70rem/* 1120px */;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-items {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-weight: 800;
+  justify-content: space-between;
+  z-index: 10;
+  width: 50rem /* 800px */;
+  display: flex;
+}
+
 .layer {
   height: 100vh;
   background-image: url(./media/Titlecard_Background.png);
@@ -40,16 +40,12 @@
 
 .grid-parent {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.green-black-gradient{
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,91,79,1) 11%, rgba(0,97,84,1) 100%);
-}
-
 .nav-button-text {
-  font-family: 'Londrina Solid';
+  font-family: "Londrina Solid";
   font-weight: 400;
   font-size: 25px;
   cursor: pointer;
@@ -59,8 +55,137 @@
   font-size: 30px;
 }
 
+.bigbutton {
+  padding: 15px;
+  background-color: rgb(86, 129, 148);
+  border-radius: 25px;
+  color: white;
+  font-family: "Londrina Solid";
+  font-size: 30px;
+  text-shadow: 0px 5px rgb(66, 100, 114);
+  box-shadow: 0px 5px 5px black;
+}
+
+.bigbutton:hover {
+  font-size: 40px;
+}
+
+.bluefrog {
+  width: 25%;
+  position: absolute;
+}
+
+.redfrog {
+  width: 28%;
+  position: absolute;
+}
+.rocketfrog {
+  width: 28%;
+  position: absolute;
+}
+.smokefrog {
+  width: 30%;
+  position: absolute;
+}
+.bigfrog {
+  width: 45%;
+  position: absolute;
+}
+
+
+.mountain {
+  background-image: url(./media/mountain-bg.png);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  height: 60%;
+}
+
+.scroll-image {
+  object-fit: fill;
+  height: 120%;
+  width: 100%;
+}
+
+.scroll-text {
+  height: 85%;
+  width: 70%;
+  text-align: justify;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Londrina Solid";
+  font-weight: light;
+}
+
+.scroll-header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.scroll-paragraph {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.treeline {
+  position: absolute;
+  bottom: 0%;
+  width: 100vw;
+  z-index: 10;
+  transform: translate(0, 50%);
+}
+
+.gameplay-top-padding {
+  z-index: -20;
+  background-color: rgb(0 97 84 / 1);
+  height: 10vh;
+}
+
+.gameplay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 91, 79, 1) 11%,
+    rgba(0, 97, 84, 1) 100%
+  );
+  padding-top: 5rem /* 80px */;
+  padding-bottom: 5rem /* 80px */;
+}
+
+.polaroid {
+  background-color: rgb(255 255 255 / 1);
+  padding-left: 0.75rem /* 12px */;
+  padding-right: 0.75rem /* 12px */;
+  padding-top: 0.75rem /* 12px */;
+}
+
+.polaroid-clockwise {
+  transform: rotate(12deg);
+}
+
+.polaroid-anticlockwise {
+  transform: rotate(-12deg);
+}
+
 .polaroid-text {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-size: 2.5rem;
   text-align: center;
   vertical-align: text-bottom;
@@ -72,13 +197,22 @@
 
 .card {
   opacity: 0;
-  
 }
 
 .basic-grid {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(12,8.33vw);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 8.33vw);
+}
+
+#catalogue {
+  position: relative;
+}
+
+.catalogue-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
 
 .piece {
@@ -86,18 +220,18 @@
 }
 
 .piece2 {
-  grid-row: 2/span 3;
-  grid-column: 2/span 4;
+  grid-row: 2 / span 3;
+  grid-column: 2 / span 4;
 }
 
 .piece3 {
-  grid-row: 5/span 3;
-  grid-column: 8/span 4;
+  grid-row: 5 / span 3;
+  grid-column: 8 / span 4;
 }
 
 .piece4 {
-  grid-row: 8/span 3;
-  grid-column: 2/span 4;
+  grid-row: 8 / span 3;
+  grid-column: 2 / span 4;
 }
 
 .web1 {
@@ -161,7 +295,68 @@
 
   text-align: center;
   color: rgb(53, 10, 10);
-  font-family: 'Londrina Solid';
+  font-family: "Londrina Solid";
+}
+
+.abs {
+  position: absolute;
+}
+
+.frog-pen {
+  top: 2.5vw;
+  font-size: 5vw;
+  z-index: 20;
+  position: relative;
+}
+
+.btn-container {
+  overflow: hidden;
+}
+
+.previous-button {
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+}
+
+.next-button {
+  z-index: 10;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+}
+
+.right-btn-icon {
+  transform: translate(25%, -50%);
+  font-size: 6rem /* 96px */;
+  line-height: 1;
+}
+
+.left-btn-icon {
+  transform: translate(-25%, -50%);
+  font-size: 6rem /* 96px */;
+  line-height: 1;
+}
+
+.left-btn-overlay {
+  top: 150%;
+  left: -60%;
+  border-radius: 9999px;
+  height: 10rem/* 160px */;
+  width: 10rem/* 160px */;
+  background-color: rgb(253 230 138 / 1);
+  position: relative;
+}
+
+.right-btn-overlay {
+  overflow: hidden;
+  right: -60%;
+  border-radius: 9999px;
+  height: 10rem/* 160px */;
+  width: 10rem/* 160px */;
+  background-color: rgb(253 230 138 / 1);
+  position: relative;
 }
 
 .scene {
@@ -172,6 +367,14 @@
   height: 140px;
   margin: 40px auto;
   perspective: 1200px;
+}
+
+.carousel-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .carousel {
@@ -194,6 +397,8 @@
   font-weight: bold;
   color: white;
   text-align: center;
+  overflow: hidden;
+  border-radius: 1.5rem /* 24px */;
 }
 
 .carousel__cell:nth-child(1) {
@@ -222,6 +427,20 @@
 }
 .carousel__cell:nth-child(9) {
   transform: rotateY(320deg) translateZ(288px);
+}
+
+.footer{
+  display: flex;
+  height: 20rem/* 320px */;
+  background-color: rgb(17 24 39 / 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: rgb(255 255 255 / 1);
+  font-family: 'Londrina Solid';
+  font-size: 45px;
 }
 
 @tailwind base;

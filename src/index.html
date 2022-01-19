@@ -13,15 +13,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
       defer
     ></script>
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"
-      defer
-    ></script> -->
-
     <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,15 +28,15 @@
       rel="stylesheet"
     />
   </head>
-  <!-- <body> -->
+  
   <!-- Introduction -->
 
-  <div class="h-screen relative w-screen intro hero">
+  <div class="intro-page">
     
-    <div class="flex justify-center items-center gap-20 absolute w-screen navigation px-5">
+    <div class="navigation">
       
       <ul
-        class="flex flex-row w-[50rem] z-20 justify-between font-extrabold text-white nav z-30"
+        class="nav-items"
       >
         <li class="nav-button-text">HOME</li>
         <li class="nav-button-text">WHITEPAPER</li>
@@ -53,36 +44,36 @@
         <li class="nav-button-text"><a href="#catalogue">CATALOGUE</a></li>
       </ul>
 
-      <img src="./media/Navbar.png" class="mx-auto w-[70rem] absolute" />
+      <img src="./media/Navbar.png" class="navbar" />
     </div>
     
     <img
       src="./media/BlueFrog.png"
-      class="absolute w-[25%] bluefrog parallax"
+      class="bluefrog parallax"
       data-depth="0.70"
     />
 
     <img
       src="./media/RedFrog.png"
-      class="absolute w-[28%] redfrog parallax"
+      class="redfrog parallax"
       data-depth="0.70"
     />
 
     <img
       src="./media/RocketFrog.png"
-      class="absolute w-[28%] rocketfrog parallax"
+      class="rocketfrog parallax"
       data-depth="0.70"
     />
     
     <img
       src="./media/SmokeFrog.png"
-      class="absolute w-[30%] smokefrog parallax"
+      class="smokefrog parallax"
       data-depth="0.70"
     />
   
     <img
       src="./media/Titlecard_foreground.png"
-      class="absolute w-[45%] bigfrog parallax"
+      class="bigfrog parallax"
       data-depth="0.85"
     />
 
@@ -95,15 +86,14 @@
 
   <!--  Scroll -->
 
-  <div class="h-screen content w-screen absolute mountain parallax z-10" data-depth="0.85">
+  <div class="mountain parallax" data-depth="0.85">
 
-    <div class="absolute flex items-center justify-center 
-        top-[20%] left-2/4 -translate-x-2/4 w-[90%] h-3/5">
-      <img src="./media/scroll.png" class="object-fill h-[120%] w-full"/>
-      <div class="scroll-text overflow-hidden h-4/5">
-          <h1 class="text-[40px] text-center">Welcome to Gamagotchi!<h1>
+    <div class="scroll-content">
+      <img src="./media/scroll.png" class="scroll-image"/>
+      <div class="scroll-text">
+          <h1 class="scroll-header">Welcome to Gamagotchi!<h1>
             <br>
-          <b class="text-[23px] font-light">
+          <b class="scroll-paragraph">
             Gamagotchi is an upcoming frog breeder simulator, built on the Polygon Network.
             Immerse yourself into the Gama universe, and hunt for the rarest species of non-fungible frogs.
             Collect colorful friends, farm food, and explore the untamed wilderness!<br><br>
@@ -111,36 +101,34 @@
             The Gama ecosystem will run on $PAD, our utility token which players can play to earn.
             It'll fuel a rich in-game marketplace where players can rent, buy and sell assets freely.
             Support the game's development by staking our token (in the near future)!
+          
       </div>
     </div>
 
     <img
       src="./media/treeline_3.png"
-      class="absolute bottom-[0%] w-screen z-10 translate-y-2/4"
+      class="treeline"
     />
-    <!-- <div class="bg-[#178e7e] h-screen absolute bottom-[11em]"></div> -->
   </div>
 
   <!-- Gameplay footage -->
-  <div class="h-[10vh] bg-[#006154] -z-20"></div>
-  <div class="relative bg-[#006154] w-screen">
-  </div>
+  <div class="gameplay-top-padding"></div>
 
-  <div class="green-black-gradient basic-grid pt-20 pb-20">
-    <div class="bg-white shadow-lg -rotate-12 piece2 px-3 pt-3 pb-10">
-      <video class="video-frame w-fit" autoplay loop muted>
+  <div class="basic-grid gameplay">
+    <div class="polaroid-anticlockwise piece2 polaroid">
+      <video class="video-frame" autoplay loop muted>
         <source src="./media/general-footage.mp4" type="video/mp4" />
       </video>
       <p class="polaroid-text">Explore</p>
     </div>
-    <div class="bg-white shadow-lg rotate-12 piece3 px-3 pt-3">
-      <video class="video-frame w-fit" autoplay loop muted>
+    <div class=" polaroid-clockwise piece3 polaroid">
+      <video class="video-frame" autoplay loop muted>
         <source src="./media/breeding-footage.mp4" type="video/mp4" />
       </video>
       <p class="polaroid-text">Breed</p>
     </div>
-    <div class="bg-white shadow-lg -rotate-12 piece4 px-3 pt-3">
-      <video class="video-frame w-fit" autoplay loop muted>
+    <div class="polaroid-anticlockwise piece4 polaroid">
+      <video class="video-frame" autoplay loop muted>
         <source src="./media/combat-footage.mp4" type="video/mp4" />
       </video>
       <p class="polaroid-text">Battle</p>
@@ -158,89 +146,89 @@
 
   <!--Catalogue-->
 
-  <div id="catalogue" class="relative">
-    <img src="./media/mushroom-bg.png" class="absolute h-[100vh] w-screen" />
+  <div id="catalogue">
+    <img src="./media/mushroom-bg.png" class="catalogue-bg" />
 
     <div class="signboard">
-      <img src="./media/wood-frame.png" class='absolute'/>
-      <div class="relative z-20 text-[5vw] top-[2.5vw]">Frog Pen</div>
+      <img src="./media/wood-frame.png" class='abs'/>
+      <div class="frog-pen">Frog Pen</div>
     </div>
 
-    <div class="h-[100vh] flex items-center justify-between">
-      <div class="overflow-hidden">
+    <div class="carousel-container">
+      <div class="btn-container">
         <button
-          class="previous-button z-10 absolute left-0 top-2/4"
+          class="previous-button"
         >
-          <ion-icon name="caret-back-outline" class="text-8xl -translate-y-2/4 -translate-x-1/4"></ion-icon>
+          <ion-icon name="caret-back-outline" class="left-btn-icon"></ion-icon>
         </button>
         <div
-          class="relative bg-amber-200 w-40 h-40 rounded-full -left-[60%] top-[150%]"
+          class="left-btn-overlay"
         ></div>
       </div>
 
       <div class="scene">
         <div class="carousel">
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/butterfly_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/dragon_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/exorcist_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/lantern_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell ">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/green_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell ">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/dragon_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell ">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/mushroom_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell ">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/lantern_frog.mp4" type="video/mp4" />
             </video>
           </div>
-          <div class="carousel__cell overflow-hidden rounded-3xl">
+          <div class="carousel__cell">
             <video class="video-frame" autoplay loop muted>
               <source src="./media/frogs/volcano_frog.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
       </div>
-      <div class="overflow-hidden">
-        <button class="next-button z-10 absolute right-0 top-2/4">
-          <ion-icon name="caret-forward-outline" class="text-8xl -translate-y-2/4 translate-x-1/4"></ion-icon>
+      <div class="btn-container">
+        <button class="next-button">
+          <ion-icon name="caret-forward-outline" class="right-btn-icon"></ion-icon>
         </button>
         <div
-          class="relative bg-amber-200 w-40 h-40 rounded-full -right-[60%] overflow-hidden"
+          class=" right-btn-overlay"
         ></div>
       </div>
     </div>
   </div>
 
   <!--Footer-->
-  <div class="flex h-80 bg-gray-900 items-center justify-center">
-    <div class="text-white font-['Londrina_Solid'] text-[45px]">More Coming Soon...</div>
+  <div class="footer">
+    <div class="footer-text">More Coming Soon...</div>
   </div>
   <script
     type="module"

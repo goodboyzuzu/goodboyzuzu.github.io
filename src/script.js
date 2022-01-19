@@ -38,30 +38,11 @@ gsap.fromTo(
   {xPercent:-50, yPercent:-50, duration: 0.5}
 );
 
-// Scroll Animation
 
-
-// let controller1 = new ScrollMagic.Controller();
-// let timeline1 = new TimelineMax();
-
-// timeline1
-//   .to(".bigfrog", 10, { y: -300 })
-//   .to(".introFrog", 10, { y: -200 }, "-=10")
-//   .fromTo(".introBg", { y: -50 }, { y: 0, duration: 10 }, "-=10")
-//   .to(".content", 8, { top: "0%" }, "-=10")
-  
-// let scene = new ScrollMagic.Scene({
-//   triggerElement: "section",
-//   duration: "300%",
-//   triggerHook: 0,
-// })
-//   .setTween(timeline1)
-//   .setPin("body")
-//   .addTo(controller1);
 
 const tl = gsap.timeline({
 	scrollTrigger: {
-		trigger: ".hero",
+		trigger: ".intro-page",
 		start: "top top",
 		end: "bottom top",
 		scrub: true
